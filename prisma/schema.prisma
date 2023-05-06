@@ -13,6 +13,31 @@ datasource db {
 model Category {
   id String @id @default(uuid())
   category String
-  createsAt DateTime @default(now())
+  createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  products Product []
+  
+}
+model Product {
+  id String @id @default(uuid())
+  name String
+  price Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  categories Category[]
+  images Image[]
+  
+}
+
+model Image {
+  id String @id @default(uuid())
+  url String
+  description String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  Product Product? @relation(fields: [productId], references: [id])
+  productId String?
 }
