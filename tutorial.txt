@@ -1,0 +1,11 @@
+npx ts-node poc/test-category-create.ts 
+npx ts-node poc/test-category-delete.ts 
+npx ts-node poc/test-category-list.ts 
+npx ts-node poc/test-category-update.ts 
+npx ts-node poc/test-connection.ts 
+npx ts-node poc/test-product-create-relation.ts 
+npx ts-node poc/test-product-create.ts 
+npx ts-node poc/test-product-list.ts 
+npx ts-node poc/test-product-delete.ts
+npx ts-node poc/test-product-update.ts
+                                             

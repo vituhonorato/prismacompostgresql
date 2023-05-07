@@ -3,10 +3,10 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient()
 
 const run = async()=> {
-    const categoryId = 'b075dfa1-515e-4f86-a5ec-bc6357115d21'
+    const categoryId = '6d3f2b29-baf2-40f8-9023-b9d4c88f9ae2'
     const savedProtdAutoTrim = await prisma.product.create({
         data: {
-            name: "Mouse with category",
+            name: "Linux",
             price: 100,
             categories:{
                 connect:[

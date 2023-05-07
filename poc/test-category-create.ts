@@ -5,7 +5,7 @@ const prisma = new PrismaClient()
 const run = async()=> {
     const savedCategories = await prisma.category.create({
         data: {
-            category: "Devices"
+            category: "Softwares"
         }
     })
     console.log(savedCategories)
