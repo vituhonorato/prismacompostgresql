@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
-
+//update category
 const run = async()=> {
     const updatedCategories = await prisma.category.update({
         where:{
