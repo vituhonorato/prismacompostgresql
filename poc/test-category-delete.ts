@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
-
+//delete category
 const run = async()=> {
     const deletedCategories = await prisma.category.delete({
         where:{
