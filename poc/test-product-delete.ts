@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
-
+//create product delete
 const run = async()=> {
     const deletedProduct = await prisma.product.delete({
         where:{
