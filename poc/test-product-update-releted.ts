@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient()
-
+//create product update
 const run = async()=> {
     const updatedProduct = await prisma.product.update({
         where:{
